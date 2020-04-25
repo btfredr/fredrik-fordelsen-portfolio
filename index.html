@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,14 +11,14 @@
     <title>Fredrik Fordelsen Portfolio</title>
 </head>
 <body>
-    <div class="header">
-        <div class="font">
-          <div class="header-right">
-            <a class="active" href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
-          </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
         </div>
       </div>
 
@@ -37,125 +38,13 @@
               </div>
             </div>
           </div>
-  
-        <div class="box-wrapper">
-          <div class="info-header">
-            <h1 class="font">Things I've worked on</h1>
+
+          <div class="btn-list">
+            <button onclick="window.location.href = 'http://consciouscoffee.fredrikfordelsen.no/'">Conscious Coffee</button>
+            <button onclick="window.location.href = 'http://tasks.fredrikfordelsen.no/semester-project/'">Eduplaytion</button>
+            <button onclick="window.location.href = 'http://flowerpower.fredrikfordelsen.no/'">Flower Power</button>
           </div>
-          <div class="box-container">
-            <div class="box">
-  
-              <div class="image">
-                <img src="./images/Brendon.jpg" alt="Brendon" class="profilepic">
-              </div>
-  
-              <div>
-                <h2 class="font">Brendon</h2>
-              </div>
-              <div>
-                <h3 class="font">8th Grade</h3>
-              </div>
-              <div class="text">
-                <p class="font-size"><i>"I joined this project because I thought it seemed like something new and different from what I had seen before. Since the game's target audience is children, it is very important that you see it all from our point of view and at the same time include us in the development."</i></p>
-              </div>
-            </div>
-  
-            <div class="box">
-              <div class="image">
-                <img src="./images/Edina.jpg" alt="Edina" class="profilepic">
-                <h2 class="font">Edina</h2>
-              </div>
-              <div>
-                <h3 class="font">4th Grade</h3>
-              </div>
-                <div class="text">
-                  <p class="font-size"><i>"I think it's nice to learn through games, because then I can compete with others. It's also cool to solve different tasks to get ahead in the game, as well as to collect points. There should be more games in school, I mean, because it's easier to learn when playing."</i></p>
-                </div>
-            </div>
-  
-            <div class="box">
-              <div class="image">
-                <img src="./images/Leila.jpg" alt="Leina Linnea" class="profilepic">
-              </div>
-              <div>
-                <h2 class="font">Leila Linnea</h2>
-              </div>
-              <div>
-                <h3 class="font">6th Grade</h3>
-              </div>
-                <div class="text">
-                  <p class="font-size"><i>"Games should be used more often at school, because learning should be fun, and I think games are more fun than books. It's easier to see how things are done than to read it in a book."</i></p>
-                </div>
-            </div>
-  
-  
-            <div class="box">
-  
-              <div class="image">
-                <img src="./images/Arve.jpg" alt="Arve" class="profilepic">
-              </div>
-  
-              <div>
-                <h2 class="font">Arve</h2>
-              </div>
-              <div>
-                <h3 class="font">6th Grade</h3>
-              </div>
-              <div class="text">
-                <p class="font-size"><i>"Normal teaching is often a bit dry and theoretical. If a game is well made, it can make learning more entertaining, fun and interesting. I like to play myself, and have learned a lot from games that I would not have discovered at school."</i></p>
-              </div>
-            </div>
-  
-            <div class="box">
-              <div class="image">
-                <img src="./images/Ingrid.jpg" alt="Ingrid" class="profilepic">
-              </div>
-  
-              <div>
-                <h2 class="font">Ingrid</h2>
-              </div>
-              <div>
-                <h3 class="font">6th Grade</h3>
-              </div>
-                <div class="text">
-                  <p class="font-size"><i>"It is important to bring children into the development of games, because it is we who are going to play it. We children know what is fun and what is not. I think it is exciting to learn and play at the same time, and it's especially fun to upgrade the fun characters in the game as we get further. It motivates."</i></p>
-                </div>
-            </div>
-  
-            <div class="box">
-              <div class="image">
-                <img src="./images/Gabriel.jpg" alt="Gabriel" class="profilepic">
-              </div>
-              <div>
-                <h2 class="font">Gabriel</h2>
-              </div>
-              <div>
-                <h3 class="font">6th Grade</h3>
-              </div>
-                <div class="text">
-                  <p class="font-size"><i>"It's fun with games because you meet a lot of different characters and characters along the way. I also like that there is so much light and color in the surrounding environment, and that you can get your own figure that you can win new equipment for. I'm more into the game."</i></p>
-                </div>
-            </div>
-            </div>
-            <div class="box-container">
-              <div class="box">
-  
-                <div class="image">
-                  <img src="./images/Mahdi.jpg" alt="Mahdi" class="profilepic">
-                </div>
-  
-                <div>
-                  <h2 class="font">Mahdi</h2>
-                </div>
-                <div>
-                  <h3 class="font">6th Grade</h3>
-                </div>
-                <div class="text">
-                  <p class="font-size"><i>"Games can teach you things differently than textbooks. There are often interesting stories in games that make it fun to discover and learn new things. I also really enjoy playing with others, it's very social, you meet new friends, and you can solve quests together."</i></p>
-                </div>
-              </div>
-            </div>
-          </div>
+        
       </div>
 
       <footer class="footer">

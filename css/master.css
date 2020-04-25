@@ -11,64 +11,67 @@ body, html {
   font-size: 20px;
 }
 
-/* Style the header with a grey background and some padding */
-.header {
+/* Add a black background color to the top navigation */
+.topnav {
     overflow: hidden;
     padding: 20px 10px;
-    background-color: #D2B48C;
     box-shadow: 1px 1px 5px 1px #3b3c38 inset;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
     background-image: url("../images/header.svg");
   }
-  @media (max-width: 768px){
-      .header{
-          /* Reverse the axis of the header, making it vertical. */
-          flex-direction: column;
   
-  
-          /* Align items to the begining (the left) of the header. */
-          align-items: flex-start;
-      }
-  }
-  /* Style the header links */
-  .header a {
+  /* Style the links inside the navigation bar */
+  .topnav a {
     float: left;
-    color: white;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-    padding: 12px;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    font-family: 'Muli' sans-serif;
+    font-size: 17px;
   }
   
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-    max-width: 100%;
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
+  /* Change the color of links on hover */
+  .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Style the active/current link*/
-  .header a.active {
-    background-color: #FAFAD2;
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: whitesmoke;
     color: black;
   }
   
-  /* Float the link section to the right */
-  .header-right {
-    float: right;
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
   }
 
   .background-image-container {
@@ -300,3 +303,28 @@ body, html {
   
   }
   }
+  
+.btn-list button {
+    background-color: #05386b;
+    border: 1px solid #05386b;
+    color: white; 
+    padding: 10px 24px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+    display: center;
+  }
+@media only screen and (min-width: 768px) {
+    .btn-list button {
+        max-width: 1560px;
+        display: center;
+    }
+}
+
+.btn-list button:not(:last-child) {
+    border-bottom: none;
+};
+
+.btn-list button:hover {
+    background-color: #EDF5E1;
+};
