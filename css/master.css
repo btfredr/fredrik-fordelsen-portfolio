@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body, html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-size {
+  font-size: 20px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: #D2B48C;
+    box-shadow: 1px 1px 5px 1px #3b3c38 inset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    background-image: url("../images/header.svg");
+  }
+  @media (max-width: 768px){
+      .header{
+          /* Reverse the axis of the header, making it vertical. */
+          flex-direction: column;
+  
+  
+          /* Align items to the begining (the left) of the header. */
+          align-items: flex-start;
+      }
+  }
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: 'Muli' sans-serif;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 100%;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #FAFAD2;
+    color: black;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+
+  .background-image-container {
+    padding-top: 20px;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media (max-width: 320px){
+      .background-image-container{
+        min-width: 100%;
+        min-height: 100%;
+        display: block;
+  
+      }
+  }
+
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+  
+    background-color: #002147;
+    color: white;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .footer {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-text {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 1em;
+  }
+
+  .ct-footer {
+    background-color: #D2B48C;
+    padding-top: 70px;
+    margin-top: 0;
+    position: relative;
+}
+.ct-footer-pre {
+    width: 100%;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #555;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width:1200px) {
+    .ct-footer-pre {
+        display: table
+    }
+    .ct-footer-pre > .inner {
+        display: table-cell;
+        vertical-align: middle
+    }
+}
+
+@media (max-width:1199px) {
+    .ct-footer-pre .form-group {
+        padding-top: 15px
+    }
+}
+
+.ct-footer-pre span {
+    color: #ebebeb;
+    font-size: 30px
+}
+
+.ct-footer-pre .form-group {
+    position: relative;
+    margin: 0;
+}
+
+.ct-footer-pre .form-group:before,
+.ct-footer-pre .form-group:after {
+    content: '';
+    display: table
+}
+
+.ct-footer-pre .form-group:after {
+    clear: both
+}
+
+.ct-footer-pre .form-group input {
+    border: 1px solid #00bff3;
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    padding: 0 30px;
+    margin: 0 5px;
+    border-radius: 0 !important;
+}
+
+}
+.ct-footer-post {
+    background: #000;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+.ct-footer-post a {
+    color: #fff;
+}
+.ct-footer-post p {
+    color: #fff;
+}
+
+@media (min-width:768px) {
+    .ct-footer-post p {
+        display: inline-block
+    }
+    .ct-footer-post p + p {
+        padding-left: 50px
+    }
+}
+
+@media (min-width:992px) {
+    .ct-footer-post .inner-left {
+        float: left
+    }
+    .ct-footer-post .inner-right {
+        float: right
+    }
+}
+
+@media (max-width:991px) {
+    .ct-footer-post {
+        text-align: center
+    }
+}
+
+.ct-footer-meta {
+    padding-top: 30px;
+}
+
+.ct-footer-meta .ct-socials {
+    padding: 20px 0;
+}
+
+.ct-footer-meta .ct-socials li {
+    padding: 0 3px
+}
+
+.ct-footer--with-button {
+    padding-top: 150px
+}
+
+.box-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  @media (min-width: 768px){
+      .box-wrapper{
+        max-width: 1560px;
+  
+      }
+      .box-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+      }
+  }
+  
+  .box-wrapper2 {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  .box-wrapper3 {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .box {
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFFFF0;
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    position: relative;
+    border-radius: 5%;
+    padding-top: 5%;
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .box {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+  
+  
+  }
+  }
+
+  .box-main {
+    border: 1px solid #F5F5F5;
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFF0;
+    height: 100%;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 5%;
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .box-main, .box-main2, .box-main3 {
+      max-width: 1560px;
+  
+  }
+  }
