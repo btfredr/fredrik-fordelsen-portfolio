@@ -26,7 +26,7 @@ body, html {
     display: block;
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
-    background-image: url("../images/header.svg");
+    background-image: url("../images/portfolio-header.svg");
   }
   
   /* Style the links inside the navigation bar */
@@ -376,8 +376,9 @@ body, html {
     margin-top: 6px;
     margin-bottom: 5px;
     resize: vertical;
-    background-color: transparent;
+    background-color: white;
     border-radius: 20px;
+    border: 1px solid black;
     
   }
 
