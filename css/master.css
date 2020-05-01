@@ -275,6 +275,13 @@ body, html {
     text-align: center;
     position: relative;   
   }
+
+  @media (min-width: 768px){
+    .btn-wrapper{
+      max-width: 700px;
+    }
+   }
+
   .cv-wrapper {
     max-width: 100%;
     margin: 0 auto;
@@ -287,14 +294,6 @@ body, html {
     background-color: #2F4454;
     border-radius: 20px;
 }
-  }
-
-
-  @media (min-width: 768px){
-    .btn-wrapper{
-      max-width: 700px;
-    }
-   }
 
    @media (min-width: 768px){
        .cv-wrapper{
