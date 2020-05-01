@@ -26,6 +26,15 @@ body, html {
     color: white;
 }
 
+.cv-text {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 1%;
+    color: white;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
@@ -266,11 +275,31 @@ body, html {
     text-align: center;
     position: relative;   
   }
+  .cv-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: center;
+    padding: 1em;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 10px 4px 2px #1F2833;
+    background-color: #2F4454;
+    border-radius: 20px;
+}
+  }
+
 
   @media (min-width: 768px){
     .btn-wrapper{
       max-width: 700px;
     }
+   }
+
+   @media (min-width: 768px){
+       .cv-wrapper{
+           max-width: 1500px;
+       }
    }
 
   .box {
