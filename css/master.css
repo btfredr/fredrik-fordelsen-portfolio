@@ -26,6 +26,13 @@ body, html {
     color: white;
 }
 
+.form-error {
+    text-align: left;
+    padding: 1%;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+
 .cv-text {
     text-align: center;
     margin-left: 15px;
@@ -273,7 +280,7 @@ body, html {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
-    position: relative;   
+    position: relative;  
   }
 
   @media (min-width: 768px){
@@ -286,7 +293,6 @@ body, html {
     max-width: 100%;
     margin: 0 auto;
     position: relative;
-    display: center;
     padding: 1em;
     margin-bottom: 10px;
     margin-bottom: 10px;
@@ -355,7 +361,6 @@ body, html {
     padding-bottom: 20px;
     cursor: pointer;
     width: 100%;
-    display: center;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     padding: 1em;
@@ -364,8 +369,6 @@ body, html {
   }
 @media only screen and (min-width: 768px) {
     .btn-list button {
-        width: 33,33%;
-        
         display: inline-block;
         border-radius: 40px;
         margin-bottom: 50px;
@@ -376,11 +379,11 @@ body, html {
 
 .btn-list button:not(:last-child) {
     border-bottom: none;
-};
+}
 
 .btn-list button:hover {
     background-color: #EDF5E1;
-};
+}
 
 .images{
     display: block;
@@ -414,8 +417,9 @@ body, html {
     resize: vertical;
     background-color: white;
     border-radius: 20px;
-    border: 1px solid black;
-    
+    border: 1px solid lightgrey;
+    font-family: 'Roboto', sans-serif;
+
   }
 
 .contact-btn {
@@ -426,7 +430,6 @@ body, html {
     margin-top: 50px;
     cursor: pointer;
     width: 100%;
-    display: center;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5%;
@@ -447,7 +450,6 @@ body, html {
 
 .btn-image {
     max-width: 100%;
-    display: center;
     padding: 1em;
     margin-bottom: 10px;
     margin-bottom: 10px;
